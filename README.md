@@ -1,8 +1,8 @@
 # bank-java
 
-#A solução de um exercício proposto onde devem ser implementados 7 métodos relacionados a POO. As classes possuem métodos setters, getters e o método construtor.
+<p>A solução de um exercício proposto onde devem ser implementados 7 métodos relacionados a POO. As classes possuem métodos setters, getters e o método construtor.</p>
 
-#O programa tenta simular uma espécie de banco, com os seguintes métodos:
+<p>O programa tenta simular uma espécie de banco, com os seguintes métodos:</p>
   1 - Abrir conta
     1.1 - A conta será cadastrada aqui, ela deve portanto além de informações como nome, data de nascimento, cpf, usuário e senha, também conter o tipo de conta.
     1.2 - A conta pode ser do tipo corrente ou poupança, cada uma delas tem uma mensalidada mensalidade e um saldo inicial, ambos são distintos, porém possuem os mesmos métodos.
