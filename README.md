@@ -1,6 +1,6 @@
 # bank-java
 
-<p>A solução de um exercício proposto onde devem ser implementados 7 métodos relacionados a POO. As classes possuem métodos setters, getters e o método construtor.</p>
+<p>A solução de um exercício proposto onde devem ser implementados 7 métodos relacionados a POO. As classes possuem métodos setters, getters e o método construtor, possuem herança e conceitos como polimorfismo de sobreposição.</p>
 
 <p>O programa tenta simular uma espécie de banco, com os seguintes métodos:</p>
   <p>1 - Abrir conta</p>
