@@ -12,7 +12,8 @@
     <p>2.2 - A conta só pode ser encerrada se não houver saldo, ou seja, saldo = 0.</p>
   <p>3 - Sacar</p>
     <p>3.1 - O método sacar apenas pedirá a senha, tipo e o valor, sendo que se senha e tipo estiverem corretos, além de que o saldo seja maior ou igual ao valor escolhido, o saque será efetuado.</p>
-    <p>4.1 - O método sacar apenas pedirá a senha, tipo e o valor, sendo que se senha e tipo estiverem corretos então a conta será identificada e o saldo da conta receberá o saldo antigo mais o valor escolhido.</p>
+    <p> 4 - Depositar </p>
+    <p>4.1 - O método depositar apenas pedirá a senha, tipo e o valor, sendo que se senha e tipo estiverem corretos então a conta será identificada e o saldo da conta receberá o saldo antigo mais o valor escolhido.</p>
   <p>5 - Emprestar</p>
     <p>5.1 - Esse é um pouco mais complicado, pois pedirá senha, tipo e valor, caso senha e tipo estejam corretos, então ele adicionará aquela conta o valor emprestado. </p>
     5.2 - Se o empréstimo foi autorizado então a mensalidade receberá além de uma taxa fixa mensal, o juros do empréstimo(valor/12) e acrescentará à mensalidade.</p>
