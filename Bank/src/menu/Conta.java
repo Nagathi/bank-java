@@ -7,6 +7,7 @@ public class Conta {
 	private String usuario;
 	private String senha;
 	private String tipo;
+	private boolean emprestimo;
 	
 	private float dinheiro;
 	private float mensal;
@@ -59,6 +60,12 @@ public class Conta {
 	public void setMensal(float mensal) {
 		this.mensal = mensal;
 	}
+	public boolean getEmprestimo() {
+		return emprestimo;
+	}
+	public void setEmprestimo(boolean emprestimo) {
+		this.emprestimo = emprestimo;
+	}
 	
 	public void abrirConta(String nome, String nascimento, String cpf, String usuario, String senha, String tipo) {
 		//Override
@@ -82,3 +89,4 @@ public class Conta {
 		//Override
 	}
 }
+
