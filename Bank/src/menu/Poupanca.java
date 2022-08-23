@@ -2,6 +2,9 @@ package menu;
 
 public class Poupanca extends Conta{
 	
+	public float valor;
+	public int contaMensal = 0;
+	
 	Poupanca(){
 		this.setNome(null);
 		this.setNascimento(null);
@@ -26,6 +29,7 @@ public class Poupanca extends Conta{
 		this.setCpf(cpf);
 		this.setUsuario(usuario);
 		this.setSenha(senha);
+		this.setEmprestimo(false);
 	}
 	public void sacar(float valor) {
 		this.setDinheiro(this.getDinheiro() - valor);
@@ -34,12 +38,19 @@ public class Poupanca extends Conta{
 		this.setDinheiro(this.getDinheiro() + valor);
 	}
 	public void emprestar(float valor) {
-		float taxaFixa = 150;
 		this.setDinheiro(this.getDinheiro() + valor);
-		this.setMensal(this.getMensal() + (valor/12));
+		this.setMensal(this.getMensal() + valor/12);
 	}
 	public void pagarMensal() {
 		this.setDinheiro(this.getDinheiro() - this.getMensal());
+		if(this.getEmprestimo()) {
+			contaMensal++;
+			if(contaMensal >= 12) {
+				contaMensal = 0;
+				this.setMensal(150);
+				this.setEmprestimo(false);
+			}
+		}
 	}
 	public void listarContas() {
 		System.out.println("Nome: " + this.getNome());
@@ -52,3 +63,4 @@ public class Poupanca extends Conta{
 		System.out.println("Mensalidade: " + this.getMensal());
 	}
 }
+
